@@ -5,7 +5,10 @@
 :root{
    --bg:#A0153E;
    --secondary:#cb5858;
-   --third:green;
+   --shadow:1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+body{
+   font-family: "Poppins";
 }
 
 nav{
@@ -40,7 +43,7 @@ nav .nav-list li a{
    font-size: 1.1rem;
    text-decoration: none;
    font-weight: 700;
-   color: antiquewhite;
+   color: white;
 }
 body{
    min-height: 100rem;
@@ -49,11 +52,26 @@ body{
    min-height: 100vh;
    display: flex;
    align-items: center;
-   background-image: url();
+   background-image: url(./img/main-bg.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    position: relative;
+}
+
+.hero .content{
+   width: 100%;
+   text-align: center;
+   position: fixed;
+   padding: 1rem;
+   top: 13.5rem;
+}
+
+.hero .content h1{
+   font-size: 4em;
+   color: white;
+   text-shadow: var(--shadow);
+   top: 150px;
 }
 
 
