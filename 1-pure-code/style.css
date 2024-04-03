@@ -1,0 +1,95 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+:root{
+   --bg:#A0153E;
+   --secondary:#cb5858;
+   --shadow:1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+body{
+   font-family: "Poppins";
+}
+
+nav{
+   display: flex;
+   height: auto;
+   width: auto;
+   background-color: var(--bg);
+   color: aliceblue;
+   padding: 0.5rem;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 999;
+}
+nav .image{
+   border-radius: 50%;
+   width: 80px;   
+}
+nav .nav-list{
+   display: flex;
+   gap: 3rem;
+   list-style-type: none;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+nav .nav-list .list-items{
+   padding: 0.5rem 1.5rem;
+   border-radius: 100px;
+}
+nav .nav-list .list-items:hover{
+   background-color: var(--secondary);
+}
+nav .nav-list li a{
+   font-size: 1.1rem;
+   text-decoration: none;
+   font-weight: 700;
+   color: white;
+}
+nav .nav-list .hamburger-menu{
+   display: none;
+}
+body{
+   min-height: 100rem;
+}
+.hero{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   background-image: url(./img/main-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.hero .content{
+   width: 100%;
+   text-align: center;
+   position: fixed;
+   padding: 1rem;
+   top: 13.5rem;
+}
+
+.hero .content h1{
+   font-size: 4em;
+   color: white;
+   text-shadow: var(--shadow);
+   top: 150px;
+}
+
+@media screen and (max-width: 1000px){
+   nav .nav-list .list-items{
+      display: none;
+   }
+   nav .nav-list .hamburger-menu{
+      display: block;
+   }
+}
+
+@media screen and (max-width: 768px){
+   nav .nav-list{
+      margin-top: 1rem;
+   }
+}
+
