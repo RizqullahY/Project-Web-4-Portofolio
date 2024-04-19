@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-:root {
-    --black:#222831;
-    --white:#EEEEEE;
+:root{
+    --main:rgba(52,44,42,255);
 }
 
 .card {
@@ -16,13 +15,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    background-color: var(--bg);
+    height: 100vh;
 }
 
 header .list-container {
     width: 100%;
-    background-color: var(--black);
+    background-color:var(--main);
     padding: 1rem;
 }
 
@@ -36,14 +34,16 @@ header .list-container li {
 }
 
 header .list-container li a {
-    text-decoration: none;
-    color: var(--white);
+    color: white;
     font-weight: 700;
     font-size: 1.2rem;
+    text-decoration: none;
+    transition: 1s;
 }
 
 header .list-container li a:hover {
-    color: var(--secondary);
+    text-decoration: underline;
+    transform: rotate(-20deg);
 }
 
 main.content {
@@ -55,19 +55,19 @@ main.content {
 }
 
 article {
-    border: 1px solid black;
+    border: 1px solid var(--main);
+    border-radius: 20px;
     padding: 1rem;
 }
 
 main article .home {
-    color: #074173;
-    font-size: 1.1rem;
     margin: 3rem;
 }
 
 main article .home h2 {
+    text-transform: uppercase;
     text-align: center;
-    border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
 }
 
@@ -104,15 +104,19 @@ main article .contact ul {
 
 main article .contact li {
     padding: 1rem;
-    border: 1px solid black;
 }
 
 main article .contact li a {
     text-decoration: none;
+    color: var(--main);
+    font-weight: 600;
+}
+
+main article .contact li a:hover {
+    color: black;
 }
 
 main aside .aside {
-    border: 1px solid black;
     justify-content: center;
     display: flex;
     padding: 1rem;
@@ -124,12 +128,11 @@ main aside .aside img {
 }
 
 footer {
-        background-color:var(--bg);
-        color: var(--text);
+        background-color:var(--main);
+        color: white;
         padding: 10px;
         text-align: center;
-        width: 100%;
-        bottom: 0;
+
 }
 
 
