@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black:#222831;
+    --white:#EEEEEE;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: var(--bg);
+}
+
+header .list-container {
+    width: 100%;
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+header .list-container ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .list-container li {
+    list-style-type: none;
+}
+
+header .list-container li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+header .list-container li a:hover {
+    color: var(--secondary);
+}
+
+main.content {
+    padding: 2rem;
+    margin-top: 5px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+article {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+main article .home {
+    color: #074173;
+    font-size: 1.1rem;
+    margin: 3rem;
+}
+
+main article .home h2 {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 2rem;
+}
+
+main article .home h4 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main article .home p {
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+main article .about {
+    padding: 1rem;
+}
+
+main article .about li {
+    line-height: 1.5rem;
+}
+
+main article .contact {
+    margin-top: 5px;
+    padding: 1rem;
+}
+
+main article .contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+main article .contact li {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+main article .contact li a {
+    text-decoration: none;
+}
+
+main aside .aside {
+    border: 1px solid black;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+}
+
+main aside .aside img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+footer {
+        background-color:var(--bg);
+        color: var(--text);
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+}
+
+
+@media(max-width:1100px) {
+    main.content {
+        display: block;
+    }
+
+    main aside .aside {
+        margin-top: 5px;
+    }
+}
